@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Kitty Order Form</title>
+
+    <style>
+    body {
+        background-color: #ffe6b5;
+        font-family: 'Poppins';
+        color: #523f3a;
+        text-align: center;
+        margin: 20px;
+    }
+    h1 {
+      font-family: 'Baloo 2';
+      color: #523f3a
+    }
+    form {
+            background-color: #fff0f6;
+            border: 2px solid #f090c9;
+            border-radius: 15px;
+            padding: 20px;
+            width: 350px;
+            margin: 0 auto;
+    }
+    label {
+      font-weight: bold;
+      font-family: 'Comic Neue';
+    }
+    #sum {
+            background-color: rgb(207, 231, 237);
+            border: 2px solid #90c9f0;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 350px;
+            font-family: 'Quicksand';
+    }
+    </style>
+</head>
+<body>
+
+  	<nav class="navbar navbar-expand-md bg-white navbar-white fixed-top">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="https://i.pinimg.com/736x/75/19/ef/7519ef361cf7f7047b44ade69b00b27d.jpg" style="width: 40px;" id="logo"></a>
+		<p style="color: black;">Kitty Coffee</p>
+
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="order.html">Order Form</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<br><br><br><br>
+
+    <!-- header -->
+    <h1>Kitty Coffee Order Form🐾</h1>
+    <br>
+
+    <!-- checkbox for ordering -->
+    <form id="order">
+        <label for="menu">Order:</label>
+        <br>
+        <input type="checkbox" name="menu" value="130"> Americano - ₱130<br>
+        <input type="checkbox" name="menu" value="135"> Mocha Frappuccino - ₱135<br>
+        <input type="checkbox" name="menu" value="135"> Caramel Latte - ₱135<br>
+        <input type="checkbox" name="menu" value="130"> Cold Brew - ₱130<br>
+        <input type="checkbox" name="menu" value="140"> Matcha Latte - ₱140
+        
+        <br><br><br>
+
+        <!-- input field for customer details -->
+        <label for="name">Customer Details:</label>
+        <br><br>
+        <input type="text" id="name" required placeholder="Name"><br><br>
+        <input type="text" id="add" required placeholder="Address"><br><br>
+        <p>*Enter valid 11-digit number</p>
+        <input type="tel" id="num"  required placeholder="Contact Number" title="Please enter a valid 11-digit PH mobile number (e.g., 09123456789)"><br><br>
+        
+        <!-- button to submit -->
+        <input type="submit" value="Place Order" py-click="place_order">
+    </form>
+
+    <!-- displaying order summary -->
+    <div id="sum">Order Summary:</div>
+
+    <script type="py" src="order (2).py"></script>
+    
+</body>
+</html>

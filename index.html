@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+   
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Kitty Coffee</title>
+
+    <style>
+        body{
+            background-color: #ffe6b5;
+            font-family: 'Poppins';
+            color: #523f3a;
+            text-align: center;
+            margin: 20px;
+        }
+        #top{
+            background-color: lightpink;
+        }
+        h1{
+            font-family: 'Baloo 2'; 
+            color: #523f3a;
+        }
+        #popular, #d{
+            background-color: #e385a9;
+        }
+        #mp, #hours{
+            background-color: #f0d183;
+        }
+        #popular, #d{
+        width: 300px;
+        margin: 10px auto;
+        }
+        table{
+            width: 100%;
+        }
+        #allergen {
+        background-color: #ffcbcb;
+        border-radius: 10px;
+        padding: 15px;
+        width: 300px;
+        margin: 20px auto;
+        color: #523f3a;
+        font-weight: bold;
+        }   
+    </style>
+
+</head>
+    <!-- navbar -->
+    </nav>
+    	<nav class="navbar navbar-expand-md bg-white navbar-white fixed-top">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="https://i.pinimg.com/736x/75/19/ef/7519ef361cf7f7047b44ade69b00b27d.jpg" style="width: 40px;"S id="logo"></a>
+		<p style="color: black;">Kitty Coffee</p>
+
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="order.html">Order Form</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<br><br><br>
+
+    <!-- header w info -->
+  <body class="container mt-4">
+    <div id="top"class="text-center text-black p-3 rounded">
+        
+        <h1 id="cafeName"></h1>
+        <p id="ownerName"></p>
+        <p id="yearFounded"></p>
+        </div>
+
+    <!-- menu table -->
+    <div class="card mt-4">
+        <div id="mp"class="card-header text-center text-white">MENU</div>
+            <div class="card-body">
+                <div id="popular" class="text-black text-center rounded">Mocha Frappucino</div>
+                   <!-- tax info -->
+                    <div id="tax" class="text-center mt-4 text-black fw-bold">Tax Rate:</div>
+                <div id="menu" class="bg-light text-black rounded">
+                    <table>
+                        <th>
+                            Product
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        </tr>
+                        <tr>
+                            <td>Americano</td>
+                            <td>₱130</td>
+                        </tr>
+                        <tr>
+                            <td>Mocha Frappucino</td>
+                            <td>₱135</td>
+                        </tr>
+                        <tr>
+                            <td>Caramel Latte</td>
+                            <td>₱135</td>
+                        </tr>
+                        <tr>
+                            <td>Cold Brew</td>
+                            <td>₱130</td>
+                        </tr>
+                        <tr>
+                            <td>Matcha Latte</td>
+                            <td>₱140</td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    <br>
+    </div>
+
+    <!-- allergen info -->
+    <div id="allergen" class="text-center">Common Allergens:</div>
+
+    <!-- opening hours -->
+    <div class="container mt-4">
+    <div id="hours"class="text-center text-white"></div>
+    </div>
+
+    <!-- delivery options -->
+    <div id="d" class="text-center mt-4 rounded">
+        <p>Dine-in & Delivery Available:</p>
+        <p id="deliver"></p>
+    </div>
+    
+    <script type="py" src="main.py"></script>
+    
+    
+</body>
+</html>
